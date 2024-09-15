@@ -6,7 +6,7 @@ const restApiRouter =require("/data/data/com.termux/files/home/my-news-backend/s
 const app =express();
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
-app.use("/news", restApiRouter);
+app.use("my-news-backend/news", restApiRouter);
 app.get("/", (req,res)=>{
  res.json({success:true,message:"return successfull"})
 });
