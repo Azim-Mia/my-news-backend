@@ -9,7 +9,7 @@ const {
   updateNewsController
 } =require("../../../src/mvc/controllers/createCRUDcontroller.js");
 const {isAdmin, unAdmin,isBaned, unBaned} =require('/data/data/com.termux/files/home/my-news-backend/adminPanel/admin.js')
-restApiRouter.get('/read', readNewsController);
+restApiRouter.get('/my-news-backend/read', readNewsController);
 restApiRouter.post('/create',validators,runValidation, createNewsController);
 restApiRouter.put('/update/:id',updateNewsController);
 restApiRouter.delete('/delete/:id',deleteNewsController);
